@@ -1,6 +1,25 @@
-<h1>
-  {{title}}
-</h1>
-<h2>
-  Last updated: <time>{{myDate | amCalendar:nextDay }}</time>
-</h2>
+<h3>
+  Local : 
+  <input type="text" [(ngModel)]="tz_local" #localtime (keyup.enter)="updateTime(localtime.value)">
+</h3>
+<h3>
+  America/New_York : {{tz_newYork}}
+</h3>
+<h3>
+  America/Los_Angeles : {{tz_losAngeles}}
+</h3>
+<h3>
+  Europe/London : {{tz_london}}
+</h3>
+<h3>
+  Chennai/India : {{tz_chennai}}
+</h3>
+<h3>
+  Melbourne/Australia : {{tz_melbourne}}
+</h3>
+<hr>
+<h1>World Clock using slider...</h1>
+
+Local Timezone : <p-slider [(ngModel)]="val" [min]="0" [max]="86400" [step]="5" (onChange)="handleChange($event)"></p-slider>
+
+Value from slider : {{val}}
