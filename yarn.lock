@@ -129,6 +129,12 @@
   version "2.5.38"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.38.tgz#a4379124c4921d4e21de54ec74669c9e9b356717"
 
+"@types/moment-timezone@^0.2.34":
+  version "0.2.34"
+  resolved "https://registry.yarnpkg.com/@types/moment-timezone/-/moment-timezone-0.2.34.tgz#948e0aff82742a31dd63714d1aac9616bc375053"
+  dependencies:
+    moment ">=2.14.0"
+
 "@types/node@^6.0.42", "@types/node@^6.0.46":
   version "6.0.63"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.63.tgz#e08acbbd5946e0e95990b1c76f3ce5b7882a48eb"
@@ -2949,7 +2955,7 @@ moment-timezone@^0.5.11:
   dependencies:
     moment ">= 2.6.0"
 
-"moment@>= 2.6.0", moment@^2.16.0:
+"moment@>= 2.6.0", moment@>=2.14.0, moment@^2.16.0:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
@@ -2982,6 +2988,23 @@ negotiator@0.4.9:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng2-slideable-directive@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/ng2-slideable-directive/-/ng2-slideable-directive-1.0.13.tgz#7edcf987201287dea6570d5a63ed2f34c1cd00ea"
+  dependencies:
+    ng2-styled-directive "1.0.5"
+
+ng2-slider-component@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/ng2-slider-component/-/ng2-slider-component-1.0.9.tgz#623d78127eaa359c30d8d38270073e542036edf1"
+  dependencies:
+    ng2-slideable-directive "1.0.13"
+    ng2-styled-directive "1.0.5"
+
+ng2-styled-directive@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/ng2-styled-directive/-/ng2-styled-directive-1.0.5.tgz#e215e04f229f144161c85008624a944c0be26d10"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -3633,6 +3656,10 @@ pretty-error@^2.0.2:
   dependencies:
     renderkid "~2.0.0"
     utila "~0.4"
+
+primeng@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-2.0.0.tgz#cc882366ccec8aeb5e046d3157f45ba35a91a1f2"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"

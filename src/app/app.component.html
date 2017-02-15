@@ -19,7 +19,14 @@
 </h3>
 <hr>
 <h1>World Clock using slider...</h1>
-
-Local Timezone : <p-slider [(ngModel)]="val" [min]="0" [max]="86400" [step]="5" (onChange)="handleChange($event)"></p-slider>
-
+<h4>Local Timezone :  {{local_unix}}</h4>
+<p-slider [(ngModel)]="val" [min]="0" [max]="slider_max" [step]="1" (onChange)="handleChange($event,'local')"></p-slider>
 Value from slider : {{val}}
+
+<h4>Chennai Timezone :  {{zone1_unix }}</h4>
+<p-slider [(ngModel)]="zone1" [min]="0" [max]="slider_max" [step]="1" (onChange)="handleChange($event, 'chennai')"></p-slider>
+Value from slider : {{zone1}}
+
+<h4>Melbourne Timezone :  {{zone2_unix}}</h4>
+<p-slider [(ngModel)]="zone2" [min]="0" [max]="slider_max" [step]="1" (onChange)="handleChange($event, 'melbourne')"></p-slider>
+Value from slider : {{zone2}}
