@@ -1,0 +1,47 @@
+<widget></widget>
+
+<!--<ul>
+  <li *ngFor="let timezoneName of timezoneNames">{{ timezoneName }}</li>
+</ul>-->
+
+<hr>
+<h1>World Clock using slider...</h1>
+
+<div>
+<h4>Local Time :  {{sliderFormattedTimeLocal}}</h4>
+<p-slider 
+  [(ngModel)]="sliderValueLocal" 
+  [min]="1" 
+  [max]="slider_max" 
+  [step]="1" 
+  (onChange)="handleSliderChange($event,'local')" >
+</p-slider>
+Value from slider : {{sliderValueLocal}}
+</div>
+
+<div>
+<h4>Chennai Time :  {{sliderFormattedTimeChennai }}</h4>
+<p-slider 
+  [(ngModel)]="sliderValueChennai" 
+  [min]="1" 
+  [max]="slider_max" 
+  [step]="1" 
+  (onChange)="handleSliderChange($event,'chennai')" >
+</p-slider>
+Value from slider : {{sliderValueChennai}}
+</div>
+
+<div>
+<h4>Melbourne Time :  {{sliderFormattedTimeMelbourne}}</h4>
+<p-slider 
+  [(ngModel)]="sliderValueMelbourne" 
+  [min]="1" 
+  [max]="slider_max" 
+  [step]="1" 
+  (onChange)="handleSliderChange($event,'melbourne')" >
+</p-slider>
+Value from slider : {{sliderValueMelbourne}}
+</div>
+<hr>
+
+

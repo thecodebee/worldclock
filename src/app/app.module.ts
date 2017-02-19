@@ -6,10 +6,14 @@ import { HttpModule } from '@angular/http';
 import {SliderModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { WidgetComponent } from './components/widget/widget.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,
