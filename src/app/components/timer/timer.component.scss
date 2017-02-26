@@ -1,0 +1,46 @@
+//Google Fonts
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans|Sofia|Lobster|Kranky|Risque|Audiowide|Coiny|Playball|Coda|Pangolin:400italic,700italic,400,700);
+
+$roboto: 'Roboto Slab', sans;
+$kranky: 'Kranky', cursive;
+$sofia: 'Sofia', cursive;
+$pangolin: 'Pangolin', sans;
+
+.card {
+    width: 350px;
+    display: inline-block;
+    padding: 3px 3px 3px 3px;
+    margin: 3px 3px 3px 3px;
+}
+
+div .card-block {
+  p {
+    font-size: 50px;
+    font-family: $roboto;
+    display:inline-block;
+  }
+  span {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: $roboto;
+    display:inline-block;
+  }
+}
+
+.timezone {
+  font-size: 15px;
+  font-family: $pangolin;
+}
+
+.time {
+  font-size: 50px;
+  
+}
+
+
+
+.date {
+  font-size: 14px;
+  font-family: $sofia;
+}

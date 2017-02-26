@@ -7,13 +7,15 @@ import {SliderModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { WidgetComponent } from './components/widget/widget.component';
+import { TimerComponent } from './components/timer/timer.component';
+import { TimerListComponent } from './components/timer-list/timer-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    WidgetComponent
+    TimerComponent,
+    TimerListComponent
   ],
   imports: [
     BrowserModule,

@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import * as moment from 'moment-timezone';
 
 const TZ_FORMAT = "YYYY-MM-DD HH:mm:ss";
-const TZ_FORMAT_SHORT = "ddd HH:mm";
+const TZ_FORMAT_SHORT = "ddd h:mm a";
 
 @Component({
   selector: 'dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
 

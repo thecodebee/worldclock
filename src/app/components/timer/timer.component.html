@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+    <span class="flag-icon flag-icon-{{ timezone.code }}"></span>
+    <span class="timezone">
+        {{ timezone.name }}
+    </span>
+    </div>
+     <div class="card-block">
+        <p>{{ timezone.formattedTime }}</p>
+        <span>{{ timezone.ampm }}</span>
+    </div>
+    <div class="card-footer">
+        <span class="date">
+            {{ timezone.formattedDate }}
+        </span>
+    </div>
+</div>

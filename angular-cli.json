@@ -19,17 +19,27 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
+        "styles.scss",
+        "../node_modules/bootstrap/scss/bootstrap.scss",
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/flag-icon-css/css/flag-icon.css",
         "../node_modules/primeng/resources/themes/omega/theme.css", 
         "../node_modules/primeng/resources/primeng.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/tether/dist/js/tether.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
+  ],
+  "addons": [
+    "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
   ],
   "e2e": {
     "protractor": {
@@ -52,7 +62,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,
